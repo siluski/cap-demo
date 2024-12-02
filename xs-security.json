@@ -1,0 +1,16 @@
+{
+  "scopes": [
+    {
+      "name": "bookviewer"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name": "bookviewer",
+      "description": "A role template for viewing books within the application.",
+      "scope-references": ["bookviewer"],
+      "attribute-references": []
+    }
+  ]
+}
