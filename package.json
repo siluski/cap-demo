@@ -22,7 +22,21 @@
     "requires": {
       "[production]": {
         "auth": "xsuaa"
-      }
+      },
+      "[development]": {
+        "auth": {
+                "kind": "mocked",
+                "users": {
+                    "book.viewer@test.com": {
+                        "password": "pswd",
+                        "ID": "book.viewer@test.com",
+                        "roles": [
+                            "bookviewer"
+                        ]
+                    }
+                }
+            }
+        }
     }
   }
 }

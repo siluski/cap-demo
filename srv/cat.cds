@@ -9,5 +9,5 @@ service BookshopService {
     annotate Books with @readonly;
     annotate Authors with @readonly;
 
-    //annotate Books with @(restrict: [{grant: ['READ'], to: ['bookviewer']}]);
+    annotate Books with @(restrict: [{grant: ['READ'], to: ['bookviewer']}]);
 }
