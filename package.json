@@ -8,7 +8,8 @@
   "dependencies": {
     "@sap/cds": "^8",
     "express": "^4",
-    "@sap/xssec": "^4"
+    "@sap/xssec": "^4",
+    "@cap-js/hana": "^1"
   },
   "devDependencies": {
     "@cap-js/cds-types": "^0.7.0",
@@ -21,28 +22,40 @@
   "cds": {
     "requires": {
       "[production]": {
-        "auth": "xsuaa"
+        "auth": "xsuaa",
+        "db": "hana"
       },
       "[development]": {
         "auth": {
-                "kind": "mocked",
-                "users": {
-                    "book.viewer@test.com": {
-                        "password": "pswd",
-                        "ID": "book.viewer@test.com",
-                        "roles": [
-                            "bookviewer"
-                        ]
-                    },
-                    "order.viewer@test.com":{
-                      "password": "pswd", "ID": "order.viewer@test.com", "roles": ["orderviewer"]
-                    },
-                    "order.admin@test.com":{
-                      "password": "pswd", "ID": "order.admin@test.com", "roles": ["orderadmin"]
-                    }
-                }
+          "kind": "mocked",
+          "users": {
+            "book.viewer@test.com": {
+              "password": "pswd",
+              "ID": "book.viewer@test.com",
+              "roles": [
+                "bookviewer"
+              ]
+            },
+            "order.viewer@test.com": {
+              "password": "pswd",
+              "ID": "order.viewer@test.com",
+              "roles": [
+                "orderviewer"
+              ]
+            },
+            "order.admin@test.com": {
+              "password": "pswd",
+              "ID": "order.admin@test.com",
+              "roles": [
+                "orderadmin"
+              ]
             }
+          }
         }
+      }
+    },
+    "sql": {
+      "native_hana_associations": false
     }
   }
 }

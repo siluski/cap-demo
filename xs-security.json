@@ -8,6 +8,18 @@
     },
     {
       "name": "orderadmin"
+    },
+    {
+      "name": "$XSAPPNAME.bookviewer",
+      "description": "bookviewer"
+    },
+    {
+      "name": "$XSAPPNAME.orderadmin",
+      "description": "orderadmin"
+    },
+    {
+      "name": "$XSAPPNAME.orderviewer",
+      "description": "orderviewer"
     }
   ],
   "attributes": [],
@@ -15,19 +27,25 @@
     {
       "name": "bookviewer",
       "description": "A role template for viewing books within the application.",
-      "scope-references": ["bookviewer"],
+      "scope-references": [
+        "bookviewer"
+      ],
       "attribute-references": []
     },
     {
       "name": "orderviewer",
-      "description":"A role template for viewing orders within the application.",
-      "scope-references": ["orderviewer"],
+      "description": "A role template for viewing orders within the application.",
+      "scope-references": [
+        "orderviewer"
+      ],
       "attribute-references": []
     },
     {
       "name": "orderadmin",
       "description": "A role template for managing orders within the application.",
-      "scope-references": ["orderadmin"],
+      "scope-references": [
+        "orderadmin"
+      ],
       "attribute-references": []
     }
   ]
