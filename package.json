@@ -33,6 +33,12 @@
                         "roles": [
                             "bookviewer"
                         ]
+                    },
+                    "order.viewer@test.com":{
+                      "password": "pswd", "ID": "order.viewer@test.com", "roles": ["orderviewer"]
+                    },
+                    "order.admin@test.com":{
+                      "password": "pswd", "ID": "order.admin@test.com", "roles": ["orderadmin"]
                     }
                 }
             }

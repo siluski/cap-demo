@@ -2,6 +2,12 @@
   "scopes": [
     {
       "name": "bookviewer"
+    },
+    {
+      "name": "orderviewer"
+    },
+    {
+      "name": "orderadmin"
     }
   ],
   "attributes": [],
@@ -10,6 +16,18 @@
       "name": "bookviewer",
       "description": "A role template for viewing books within the application.",
       "scope-references": ["bookviewer"],
+      "attribute-references": []
+    },
+    {
+      "name": "orderviewer",
+      "description":"A role template for viewing orders within the application.",
+      "scope-references": ["orderviewer"],
+      "attribute-references": []
+    },
+    {
+      "name": "orderadmin",
+      "description": "A role template for managing orders within the application.",
+      "scope-references": ["orderadmin"],
       "attribute-references": []
     }
   ]
